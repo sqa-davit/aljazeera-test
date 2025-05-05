@@ -11,6 +11,12 @@ exports.config = {
   // tests: './specs/**/*.spec.js',
   tests: './features/**/*.feature',
   output: './output',
+  plugins: {
+    allure: {
+      enabled: true,
+      require: "allure-codeceptjs",
+    },
+  },
   helpers: {
     WebDriver: {
       url: 'https://aljazeera.com',

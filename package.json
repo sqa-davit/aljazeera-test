@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "allure-codeceptjs": "^3.2.1",
     "chromedriver": "^136.0.0",
     "codeceptjs": "^3.7.3",
     "codeceptjs-cucumber": "^5.0.0",
