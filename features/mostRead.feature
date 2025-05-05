@@ -21,5 +21,5 @@ Feature: Validation of 'Most Read' section on Al Jazeera homepage
   @desktop @accessibility
   Scenario: Verify bypass block menu item for 'Most Read' is functional
     Given I am using a Desktop viewport
-    When I activate the bypass block menu
+    When I select "Most Read" option
     # Then I should be navigated to the "Most Read" section

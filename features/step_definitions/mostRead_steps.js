@@ -24,8 +24,8 @@ Then('the {string} section should contain {int} posts', async (section, count) =
     await HomePage.sectionShouldContainPosts(section, count);
 });
 
-When('I activate the bypass block menu',async () => {
-   await HomePage.useBypassBlock();
+When('I select {string} option', async (optionLinkName) => {
+    await HomePage.useBypassBlock(optionLinkName);
 });
 
 Then('I should be navigated to the {string} section', (section) => {
