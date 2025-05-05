@@ -1,4 +1,6 @@
 const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
+require('dotenv').config();
+
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
@@ -19,8 +21,8 @@ exports.config = {
   },
   helpers: {
     WebDriver: {
-      url: 'https://aljazeera.com',
-      browser: 'chromium',
+      url: process.env.BASE_URL || 'https://www.aljazeera.com',
+      browser: process.env.BROWSER || 'chromium',
       show: true,
     },
     AssertWrapper: {
