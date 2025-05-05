@@ -28,6 +28,6 @@ When('I select {string} option', async (optionLinkName) => {
     await HomePage.useBypassBlock(optionLinkName);
 });
 
-Then('I should be navigated to the {string} section', (section) => {
+Then('I should be navigated to the {string} page', (section) => {
     HomePage.sectionShouldBeFocused(section);
 });

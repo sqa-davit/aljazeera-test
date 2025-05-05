@@ -37,18 +37,15 @@ module.exports = {
         for (let i = 0; i < tabCount; i++) { 
             await browser.keys('Tab');
         }
-        I.wait(5000); // bad solution for hard waiting
-        I.click(`(//a[contains(@class,'bypass-block-link')])[${tabCount}]`);
+        await browser.keys('Enter');
     },
 
     async useBypassBlock(optionLinkName) {
         I.click(".bypass-block-links-container");
-        I.wait(1);  // bad solution for hard waiting
         await this.selectBypassOption(optionLinkName);
-        I.wait(15); // bad solution for hard waiting
     },
 
     sectionShouldBeFocused(section) {
-        I.seeInCurrentUrl('#most-read'); // or verify scrolling/focus
+        I.seeInCurrentUrl(section); // or verify scrolling/focus
     }
 };
