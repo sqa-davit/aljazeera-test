@@ -5,11 +5,11 @@ Given('I am on the Al Jazeera homepage', () => {
 });
 
 Given('I am using a Desktop viewport', () => {
-    I.resizeWindow(1920, 1080);
+    I.resizeWindow(1920, 1080); // Add browser resoltion on .env file
 });
 
 Given('I am using a Mobile viewport', () => {
-    I.resizeWindow(375, 812); // iPhone X dimensions
+    I.resizeWindow(375, 812); // Add iPhone X dimensions on .env file
 });
 
 Then('the {string} section should be visible', (section) => {
