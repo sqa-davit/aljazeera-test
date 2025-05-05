@@ -1,0 +1,22 @@
+{
+  "name": "aljazeera-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chromedriver": "^136.0.0",
+    "codeceptjs": "^3.7.3",
+    "codeceptjs-cucumber": "^5.0.0",
+    "webdriver": "9.7.2",
+    "webdriverio": "^6.12.1"
+  },
+  "dependencies": {
+    "codeceptjs-assert": "^0.0.5"
+  }
+}
