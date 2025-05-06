@@ -2,6 +2,7 @@
 NodeJS version v22.13.1 <br>
 CodeceptJS uses WebdriverIO <br>
 Page object model with BDD <br>
+For reporting used Allure report <br>
 for running all tests need to use  <br> `npm install` <br>  `npx codeceptjs run --features` <br>
 
 ## Project improvment & Solutions
